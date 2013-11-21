@@ -1,4 +1,4 @@
-#modif user1
+#modif user1  test branch and pull request
 
 find . -name SCCS -prune -o -name '*.gui.xml' -exec grep "<label" {} \; > /tmp/usedLabelXmlTmp
 
