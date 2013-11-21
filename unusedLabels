@@ -1,0 +1,12 @@
+
+
+find . -name SCCS -prune -o -name '*.gui.xml' -exec grep "<label" {} \; > /tmp/usedLabelXmlTmp
+
+echo > /tmp/usedLabelXml
+
+cat /tmp/usedLabelXmlTmp | while read line
+do
+  expr "$line" : ".*ref=\"\([^\"]*\)\"" >> /tmp/usedLabelXml
+done
+
+sort -u /tmp/usedLabelXml > /tmp/usedLabelXml.sorted
