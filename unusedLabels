@@ -1,4 +1,4 @@
-
+#modif user1
 
 find . -name SCCS -prune -o -name '*.gui.xml' -exec grep "<label" {} \; > /tmp/usedLabelXmlTmp
 
