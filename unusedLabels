@@ -1,4 +1,5 @@
 # modif user2 + user1 (merged) + test branch and pull request
+# my modif
 find . -name SCCS -prune -o -name '*.gui.xml' -exec grep "<label" {} \; > /tmp/usedLabelXmlTmp
 
 echo > /tmp/usedLabelXml
